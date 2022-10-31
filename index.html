@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Assets/Styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendri Aldi Zulfan - 120140186</title>
 </head>
 <body>
     <header class="jumbotron">
         <h1>Simple Web Calculators</h1>
     </header>
-    <main class="container box">
-        <div class="displayResult">
-          <h1 id="result">0</h1>  
+    <main>
+        <div class="container box">
+            <div class="displayResult">
+                <h1 id="result">0</h1>  
+            </div>
+            <div class="buttonRow">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button invers">(-/+)</div>
+            </div>
+            <div class="buttonRow">
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button op">+</div>
+            </div>
+            <div class="buttonRow">
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button op">-</div>
+            </div>
+            <div class="buttonRow">
+                <div class="button ce">CE</div>
+                <div class="button">0</div>
+                <div class="button equals">=</div>
+            </div>
         </div>
-        <div class="buttonRow">
-            <div class="button">1</div>
-            <div class="button">2</div>
-            <div class="button">3</div>
-            <div class="button invers">(-/+)</div>
-        </div>
-        <div class="buttonRow">
-            <div class="button">4</div>
-            <div class="button">5</div>
-            <div class="button">6</div>
-            <div class="button op">+</div>
-        </div>
-        <div class="buttonRow">
-            <div class="button">7</div>
-            <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button op">-</div>
-        </div>
-        <div class="buttonRow">
-            <div class="button ce">CE</div>
-            <div class="button">0</div>
-            <div class="button equals">=</div>
-        </div>
-        <div class="histori box">
+        <div class="history box">
             <h3>Riwayat Perhitungan</h3>
             <table>
                 <thead>
@@ -47,15 +50,12 @@
                         <th>Hasil</th>
                     </tr>
                 </thead>
-                <tbody class="historiList">
+                <tbody class="historyList">
                 </tbody>
             </table>
         </div>
     </main>
-    <footer>
-        <p>&copy;Hendri Aldi Zulfan - 120140186</p>
-    </footer>
-    <script src="Assets/JavaScript/script.js"></script>
     <script src="Assets/JavaScript/historyControl.js"></script>
+    <script src="Assets/JavaScript/script.js"></script>
 </body>
 </html>

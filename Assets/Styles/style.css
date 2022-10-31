@@ -50,6 +50,7 @@ body {
     background-color: #ffaf03;
 }
 .equals {
+    background-color: #ffaf03;
     flex-basis: 50%;
 }
 .box {
@@ -59,7 +60,7 @@ body {
     padding: 30px;
     margin-top: 20px;
 }
-.histori {
+.history {
     width: 80%;
     margin: 60px auto 0 auto;
     overflow: scroll;
@@ -80,23 +81,34 @@ th {
     color: #000;
     background-color: #ffaf03;
 }
+tr {
+    background-color: #fff;
+}
 tr:nth-child(even) {
     background-color: #c9c4b9;
 }
-footer {
-    text-align: center;
-    flex-direction: column;
-    padding: 20px;
-    position: sticky;
-    font-weight: bold;
-    background-color: aqua;
-    margin-top: 20px;
-}
 @media screen and (max-width: 513px) {
+    body {
+        background-color: #91908c;
+    }
     .button {
         padding: 10px;
     }
     .history {
         width: 100%;
+        margin: 0 auto;
     }
+    .box {
+        box-shadow: 0 0 0 0;
+        padding: 5px;
+    }
+    .history h3 {
+        background-color: #ffaf03;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    td {
+        padding: 5px;
+    }
+
 }

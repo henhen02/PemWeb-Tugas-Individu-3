@@ -33,11 +33,21 @@ function inversNum() {
 }
 
 function count() {
+    let result;
     if (calculator.operators === '+'){
-        calculator.displayResult = parseInt(calculator.firstNum) + parseInt(calculator.displayResult);
+        result = parseInt(calculator.firstNum) + parseInt(calculator.displayResult);
     } else {
-        calculator.displayResult = parseInt(calculator.firstNum) - parseInt(calculator.displayResult);
+        result = parseInt(calculator.firstNum) - parseInt(calculator.displayResult);
     }
+    const history = {
+        number1: calculator.firstNum,
+        number2: calculator.displayResult,
+        op: calculator.operators,
+        result: result 
+    }
+    putHistory(history);
+    calculator.displayResult = result;
+    printHistoryData();
 }
 
 function opHandler(operator) {
@@ -53,7 +63,7 @@ function opHandler(operator) {
 
 const buttons = document.querySelectorAll('.button');
 
-for (var button of buttons){
+for (let button of buttons){
     button.addEventListener('click', function(event){
         const target = event.target;
         if (target.classList.contains('ce')){
