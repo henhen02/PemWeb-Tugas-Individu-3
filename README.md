@@ -1,4 +1,4 @@
 # Simple Web Calculator
 
-[screenshoot](./Assets/Images/mobile.png)
+<img src='Assets/Images/mobile.png' alt='Tampilan ponsel'>
 Melakukan perhitungan sederhana dan memanfaatkan manipulasi DOM untuk merubah halaman web.
