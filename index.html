@@ -6,8 +6,8 @@
     <title>Hendri Aldi Zulfan - 120140186</title>
 </head>
 <body>
-    <header>
-        <h1 style="text-align: center">Simple Kalkulator</h1>
+    <header class="jumbotron">
+        <h1>Simple Web Calculators</h1>
     </header>
     <main class="container box">
         <div class="displayResult">
@@ -17,7 +17,7 @@
             <div class="button">1</div>
             <div class="button">2</div>
             <div class="button">3</div>
-            <div class="button op">(-/+)</div>
+            <div class="button invers">(-/+)</div>
         </div>
         <div class="buttonRow">
             <div class="button">4</div>
@@ -32,13 +32,30 @@
             <div class="button op">-</div>
         </div>
         <div class="buttonRow">
-            <div class="button op">CE</div>
+            <div class="button ce">CE</div>
             <div class="button">0</div>
             <div class="button equals">=</div>
         </div>
+        <div class="histori box">
+            <h3>Riwayat Perhitungan</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Angka pertama</th>
+                        <th>Operator</th>
+                        <th>Angka kedua</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody class="historiList">
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
-
+        <p>&copy;Hendri Aldi Zulfan - 120140186</p>
     </footer>
+    <script src="Assets/JavaScript/script.js"></script>
+    <script src="Assets/JavaScript/historyControl.js"></script>
 </body>
 </html>
